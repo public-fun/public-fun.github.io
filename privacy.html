@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carouse privacy policy</title>
+<meta name="description" content="What the Carouse app collects, what it does with it, and how to delete it.">
+<style>
+  :root {
+    --base: #0A0A0A; --sheet: #121212; --card: #181818; --hairline: #262626;
+    --ink: #D6D6D6; --ink2: #8A8A8A; --accent: #FF6A1A;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--base); color: var(--ink);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", system-ui, sans-serif;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .meta { color: var(--ink2); font-size: 14px; margin: 0 0 32px; }
+  h2 { font-size: 20px; margin: 36px 0 10px; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 20px; }
+  .summary { background: var(--card); border: 1px solid var(--hairline); border-radius: 16px; padding: 18px 20px; }
+  .summary ul { margin: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  strong { color: #FFFFFF; font-weight: 600; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--hairline); color: var(--ink2); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Carouse privacy policy</h1>
+  <p class="meta">Effective October 29, 2026</p>
+
+  <p>Carouse is an iPhone app from Public Fun that shows which Lexington bars are busy right now, based on reports people send while they're there. This policy says what the app collects, what it does with it, and how to delete it. It is short because the app collects little.</p>
+
+  <h2>The short version</h2>
+  <div class="summary">
+    <ul>
+      <li>Looking at the app needs no account and sends us nothing about you.</li>
+      <li>Reporting needs Sign in with Apple. We get an anonymous Apple identifier and the email address Apple chooses to share (often a private relay address). We never see your Apple password.</li>
+      <li>When you report, the app checks your location once, on your phone, and sends us the distance to the bar in meters. Your coordinates never leave the phone.</li>
+      <li>Your reports are shown to other people only as totals for a bar, never with your name or email.</li>
+      <li>You can delete your account from inside the app. Your reports stay in the totals with nothing linking them to you.</li>
+      <li>No ads, no analytics, no tracking, no selling data.</li>
+    </ul>
+  </div>
+
+  <h2>What we collect</h2>
+  <p><strong>Without an account.</strong> The app fetches the list of bars and their current status from our server. Like any internet service, our hosting providers keep short-lived server logs that include your IP address and the time of the request. We don't use these to identify anyone.</p>
+  <p><strong>When you sign in.</strong> Carouse uses Sign in with Apple only. Apple sends us a unique identifier for your account and the email address you chose to share. If you chose Hide My Email, we receive Apple's relay address and never your real one. If Apple shares your first name on the first sign-in, we store it so the account screen can greet you; it is never shown to anyone else, and you can delete it with your account.</p>
+  <p><strong>When you report.</strong> A report records the bar, the busyness level you picked (Dead, Chill, Busy or Packed), whether there is a cover charge and how much, the distance between your phone and the bar in meters, and the time. Reports are linked to your account so that a second report on the same bar within 30 minutes replaces the first, and so that reports can be weighted by how well they agree with other people's over time.</p>
+  <p><strong>Location.</strong> The app asks for location permission only when you tap the locate button on the map or send a report. For a report it takes one reading at that moment, computes the distance to the bar on your phone, and sends only that distance. Reports from inside the bar count in full; reports from farther away count less. The app never reads your location in the background and never sends latitude or longitude to our server.</p>
+  <p><strong>Favorites.</strong> The bars you mark as favorites, linked to your account.</p>
+
+  <h2>What we don't collect</h2>
+  <p>No advertising identifiers, no analytics or crash-reporting services, no contacts, no photos, no background location, no payment information. Carouse has no ads and nothing to sell.</p>
+
+  <h2>How we use it</h2>
+  <ul>
+    <li>To compute each bar's busyness, cover and specials for everyone, from the last two hours of reports.</li>
+    <li>To weight reports: a report from inside the bar counts more than one from across town, and an account whose reports consistently disagree with everyone else's gradually counts less. This is how we keep one person from making a bar look packed.</li>
+    <li>To show you your own recent report on a bar and your favorites.</li>
+    <li>To respond when you write to us.</li>
+  </ul>
+  <p>We don't use your data for anything else, and we don't sell it or share it with advertisers.</p>
+
+  <h2>Who else sees it</h2>
+  <p>Carouse runs on a few services that process data on our behalf:</p>
+  <ul>
+    <li><strong>Supabase</strong> hosts our database and handles sign-in. It stores the data described above.</li>
+    <li><strong>Apple</strong> provides Sign in with Apple and the map (Apple Maps). Apple's own privacy policy applies to those.</li>
+    <li><strong>Expo</strong> builds and delivers the app.</li>
+  </ul>
+  <p>Tapping Directions opens Apple Maps and tapping Uber opens the Uber app or website; from that point you're in their apps, under their policies. We don't send them anything about you; they receive the bar's address.</p>
+  <p>Other people using Carouse see each bar's totals: a busyness label, a report count, how long ago the newest report arrived, and the cover charge. They never see who reported.</p>
+
+  <h2>How long we keep it</h2>
+  <p>Reports feed the live ranking for two hours and are kept afterward so that report weighting can be calculated. Your account, email, name and favorites are kept until you delete the account.</p>
+
+  <h2>Deleting your account</h2>
+  <p>Open Carouse, tap the account button on the Tonight screen, then Delete account. This removes your account, your sign-in record, your name and your favorites. Your past reports stay in the totals with nothing linking them to you. You can also email us and we'll do it for you.</p>
+
+  <h2>Age</h2>
+  <p>Carouse is about bars. You must be 21 or older to use it, and the app asks you to confirm that on first open. It is not directed at anyone under 18, and we don't knowingly collect data from them.</p>
+
+  <h2>Security</h2>
+  <p>Everything between the app and our server travels over HTTPS. The database uses per-row access rules so that an account can read and change only its own data, and the app itself holds no secret keys.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the date at the top changes and the new version is published at this address. A change that affects what we collect will be mentioned in the app.</p>
+
+  <h2>Contact</h2>
+  <p>Public Fun is run by Jamie Gilbert in Lexington, Kentucky. Questions and deletion requests: <a href="mailto:publicfun.app@outlook.com">publicfun.app@outlook.com</a>.</p>
+
+  <footer>Carouse, from Public Fun.</footer>
+</main>
+</body>
+</html>
